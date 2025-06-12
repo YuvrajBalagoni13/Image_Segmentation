@@ -13,7 +13,7 @@ def PlotResultCurves(result):
         val dice:
         """
     epochs = list(range(len(result["train loss"])))
-    fig, ax = plt.figure(1, 4, figsize=(24, 6))
+    fig, ax = plt.subplots(1, 4, figsize=(24, 6))
 
     ax[0].plot(epochs, result["train loss"], label="Train")
     ax[0].plot(epochs, result["val loss"], label="Validation")
