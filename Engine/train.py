@@ -160,7 +160,7 @@ def Train(architecture: str = "R50AttentionUNet",
             patience = 0
         prev_loss = min(prev_loss, val_loss)
 
-    model_path = Path("Models/")
+    model_path = Path("Trained_Models/")
     if model_path.is_dir() == False:
         model_path.mkdir()
 
