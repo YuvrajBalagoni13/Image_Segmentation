@@ -70,7 +70,7 @@ def Train(architecture: str = "R50AttentionUNet",
 
     for epoch in tqdm(range(config.Epochs)):
         Model.train()
-        train_loss, train_acc, train_miou, train_dice = 0, 0, 0
+        train_loss, train_acc, train_miou, train_dice = 0, 0, 0, 0
 
         scaler = GradScaler(device=device)
         for batch_idx, (x,y) in enumerate(train_dataloader):
@@ -101,7 +101,7 @@ def Train(architecture: str = "R50AttentionUNet",
         train_dice /= len(train_dataloader)
 
         Model.eval()
-        val_loss, val_miou, val_dice = 0, 0, 0
+        val_loss, val_acc, val_miou, val_dice = 0, 0, 0, 0
 
         with torch.inference_mode():
             for batch_idx, (x,y) in enumerate(val_dataloader):
