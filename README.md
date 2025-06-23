@@ -36,7 +36,7 @@ Input → Encoder → Attention Gates → Bottleneck → Decoder with Attended F
 | UNet | None | 92.5% | Standard encoder-decoder with skip connections |
 | Attention UNet | None | 93.8% | Adds attention gates to skip connections |
 | UNet | ResNet50 | 94.6% | Uses ResNet50 as encoder for feature extraction |
-| **Attention UNet** | **ResNet50** | **95.99%** | **Combines ResNet features with attention mechanism** |
+| **Attention UNet** | **ResNet50** | **95.99%** | **Combines ResNet features with attention gates** |
 
 ## Results
 The Attention UNet with ResNet50 backbone achieved the best performance on the CamVid dataset:
