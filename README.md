@@ -38,15 +38,6 @@ Input → Encoder → Attention Gates → Bottleneck → Decoder with Attended F
 | UNet | ResNet50 | 94.6% | Uses ResNet50 as encoder for feature extraction |
 | **Attention UNet** | **ResNet50** | **95.99%** | **Combines ResNet features with attention gates** |
 
-## Results
-The Attention UNet with ResNet50 backbone achieved the best performance on the CamVid dataset:
-
-### Key Metrics
-- **Accuracy**: 95.99%
-- **Dice Coefficient**: 0.85
-- **mIoU**: 0.82
-- **Loss**: 0.12
-
 ## Getting Started
 
 ### Prerequisites
