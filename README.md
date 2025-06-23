@@ -1,4 +1,4 @@
-# Image Segmentation Project
+# Image Segmentation 
 
 ## Overview
 This project implements and compares several image segmentation architectures on the CamVid dataset. I developed multiple segmentation models including UNet, Attention UNet, UNet with ResNet50 backbone, and Attention UNet with ResNet50 backbone. The best-performing model was **Attention UNet with ResNet50 backbone**, achieving **95.99% accuracy**.
